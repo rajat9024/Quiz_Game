@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, rgb(173, 45, 154),rgb(10, 205, 143));
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.quiz-container {
+    background-color: #499ac3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+}
+
+h1 {
+    color: #7012d5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.question-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #463333;
+}
+
+.question-text {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-item {
+    margin-bottom: 8px;
+}
+
+.option-label {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-label:hover {
+    background-color: #f0f0f0;
+}
+
+.option-input {
+    margin-right: 10px;
+}
+
+#submit-button, #play-again-button {
+    background-color: #eb0505;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#submit-button:hover, #play-again-button:hover {
+    background-color: #0056b3;
+}
+
+#play-again-button {
+    margin-top: 10px;
+}
+
+#results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#results h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#score {
+    font-size: 18px;
+    color: #0a0a0b; /* Green for positive feedback */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Visual feedback for selected answer */
+input[type="radio"]:checked + .option-label {
+    background-color: #d1e7dd; /* Light green */
+    border-color: #badbcc;
+    color: #0f5132;
+    font-weight: bold;
+}
